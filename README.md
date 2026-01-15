@@ -30,7 +30,7 @@ Overall, this project demonstrates how a modern MLOps workflow can be applied to
 ## Week 1
 
 ### Project Setup & Structure
-- [v] Create a git repository (M5)  
+- [x] Create a git repository (M5)  
 - [ ] Make sure that all team members have write access to the GitHub repository (M5)  
 - [ ] Create a dedicated environment for your project to keep track of your packages (M2)  
 - [ ] Create the initial file structure using Cookiecutter with an appropriate template (M6)  
