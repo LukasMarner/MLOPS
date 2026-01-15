@@ -31,9 +31,9 @@ Overall, this project demonstrates how a modern MLOps workflow can be applied to
 
 ### Project Setup & Structure
 - [x] Create a git repository (M5)  
-- [ ] Make sure that all team members have write access to the GitHub repository (M5)  
-- [ ] Create a dedicated environment for your project to keep track of your packages (M2)  
-- [ ] Create the initial file structure using Cookiecutter with an appropriate template (M6)  
+- [x] Make sure that all team members have write access to the GitHub repository (M5)  
+- [x] Create a dedicated environment for your project to keep track of your packages (M2)  
+- [x] Create the initial file structure using Cookiecutter with an appropriate template (M6)  
 
 ### Data & Modeling
 - [ ] Fill out `data.py` so it downloads and preprocesses the required data (M6)  
