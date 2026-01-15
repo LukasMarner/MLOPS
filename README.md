@@ -35,7 +35,7 @@ Legend:
 
 | Task | Module | Owner | Status | Priority | Notes |
 |------|--------|-------|--------|----------|-------|
-| Create GitHub repository | M5 |  | Todo | High |  |
+| Create GitHub repository | M5 | x | Todo | High |  |
 | Grant team write access | M5 |  | Todo | High |  |
 | Create project environment (venv/conda/uv) | M2 |  | Todo | High |  |
 | Generate project template with Cookiecutter | M6 |  | Todo | Medium |  |
