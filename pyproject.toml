@@ -6,23 +6,26 @@ build-backend = "uv_build"
 name = "mlops_project"
 version = "0.0.1"
 description = "Project for DTU mlops January course."
-authors = [
-  { name = "David Tanase", email = "your@email.com" },
-]
+authors = [{ name = "David Tanase", email = "your@email.com" }]
 
 keywords = ["machine learning", "MLOps"]
 classifiers = [
-  "Development Status :: 3 - Alpha",
-  "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
 ]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi==0.115.6",
     "torch==2.6.0",
+    "torchvision==0.21.0",
+    "pillow==11.1.0",
+    "datasets==3.2.0",
+    "transformers==4.48.0",
     "typer==0.15.1",
     "uvicorn==0.34.0",
 ]
+
 
 [dependency-groups]
 dev = [
@@ -38,12 +41,8 @@ dev = [
 
 
 [tool.uv.sources]
-torch = [
-    { index = "pytorch-cpu" },
-]
-torchvision = [
-    { index = "pytorch-cpu" },
-]
+torch = [{ index = "pytorch-cpu" }]
+torchvision = [{ index = "pytorch-cpu" }]
 
 [[tool.uv.index]]
 name = "pytorch-cpu"
