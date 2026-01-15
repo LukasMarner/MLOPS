@@ -19,99 +19,100 @@ We also include unit tests for the data pipeline and the model, and run these te
 Overall, this project demonstrates how a modern MLOps workflow can be applied to a realistic computer vision problem.
 
 
-# MLOps Project Tracker
+# Project Checklist
 
-> This document is used to track ownership, progress, and responsibilities across the MLOps project.
-> Not all items are required for the exam — this is a **menu**, not a contract.
-
-Legend:
-- **Status**: `Todo`, `In Progress`, `Blocked`, `Done`
-- **Priority**: `Low`, `Medium`, `High`
-- **Week**: Expected target week (1–3)
+> **Note**  
+> All lists are *exhaustive*, meaning you are **not expected to have completed every single point** for the exam.  
+> The module in parentheses indicates which course module the item is related to.
 
 ---
 
-## Week 1 — Foundations
+## Week 1
 
-| Task | Module | Owner | Status | Priority | Notes |
-|------|--------|-------|--------|----------|-------|
-| Create GitHub repository | M5 | x | Todo | High |  |
-| Grant team write access | M5 |  | Todo | High |  |
-| Create project environment (venv/conda/uv) | M2 |  | Todo | High |  |
-| Generate project template with Cookiecutter | M6 |  | Todo | Medium |  |
-| Implement `data.py` (download + preprocessing) | M6 |  | Todo | High |  |
-| Implement `model.py` | M6 |  | Todo | High |  |
-| Implement `train.py` | M6 |  | Todo | High |  |
-| Dependency management (requirements / pyproject) | M2, M6 |  | Todo | High |  |
-| PEP8 compliance | M7 |  | Todo | Medium |  |
-| Code documentation | M7 |  | Todo | Medium |  |
-| Data versioning (DVC or similar) | M8 |  | Todo | Medium |  |
-| Add CLI commands | M9 |  | Todo | Low |  |
-| Create Dockerfile(s) | M10 |  | Todo | High |  |
-| Build Docker images locally | M10 |  | Todo | High |  |
-| Add experiment config files | M11 |  | Todo | Medium |  |
-| Integrate Hydra | M11 |  | Todo | Medium |  |
-| Add profiling | M12 |  | Todo | Low |  |
-| Add logging | M14 |  | Todo | Medium |  |
-| Add Weights & Biases | M14 |  | Todo | Medium |  |
-| Hyperparameter sweep | M14 |  | Todo | Low |  |
-| Use PyTorch Lightning | M15 |  | Todo | Low |  |
+### Project Setup & Structure
+- [v] Create a git repository (M5)  
+- [ ] Make sure that all team members have write access to the GitHub repository (M5)  
+- [ ] Create a dedicated environment for your project to keep track of your packages (M2)  
+- [ ] Create the initial file structure using Cookiecutter with an appropriate template (M6)  
 
----
+### Data & Modeling
+- [ ] Fill out `data.py` so it downloads and preprocesses the required data (M6)  
+- [ ] Add a model to `model.py` and a training procedure to `train.py` and get it running (M6)  
 
-## Week 2 — Testing, CI & Deployment
+### Dependency & Code Quality
+- [ ] Keep `requirements.txt` / `requirements_dev.txt` or `pyproject.toml` / `uv.lock` up to date (M2, M6)  
+- [ ] Follow good coding practices (PEP8) (M7)  
+- [ ] Document essential parts of the code (M7)  
 
-| Task | Module | Owner | Status | Priority | Notes |
-|------|--------|-------|--------|----------|-------|
-| Data unit tests | M16 |  | Todo | High |  |
-| Model / training unit tests | M16 |  | Todo | High |  |
-| Code coverage | M16 |  | Todo | Medium |  |
-| Setup GitHub Actions CI | M17 |  | Todo | High |  |
-| Multi-OS / PyTorch / caching in CI | M17 |  | Todo | Medium |  |
-| CI linting | M17 |  | Todo | Medium |  |
-| Pre-commit hooks | M18 |  | Todo | Medium |  |
-| Data change trigger workflow | M19 |  | Todo | Low |  |
-| Model registry trigger workflow | M19 |  | Todo | Low |  |
-| Create GCP bucket for data | M21 |  | Todo | High |  |
-| Docker build workflow | M21 |  | Todo | High |  |
-| Run training in GCP | M21 |  | Todo | Medium |  |
-| FastAPI inference API | M22 |  | Todo | High |  |
-| Deploy API (Cloud Run / Functions) | M23 |  | Todo | High |  |
-| API tests + CI | M24 |  | Todo | Medium |  |
-| Load testing | M24 |  | Todo | Low |  |
-| ONNX or BentoML deployment | M25 |  | Todo | Low |  |
-| Frontend for API | M26 |  | Todo | Low |  |
+### MLOps Foundations
+- [ ] Set up version control for your data or parts of your data (M8)  
+- [ ] Add command-line interfaces and project commands where appropriate (M9)  
+- [ ] Create one or more Dockerfiles (M10)  
+- [ ] Build the Docker images locally and verify they work (M10)  
+- [ ] Write one or more configuration files for experiments (M11)  
+- [ ] Use Hydra to load configurations and manage hyperparameters (M11)  
+- [ ] Use profiling to optimize your code (M12)  
+- [ ] Use logging to log important events (M14)  
+- [ ] Use Weights & Biases to log training progress and artifacts (M14)  
+- [ ] Consider running a hyperparameter sweep (M14)  
+- [ ] Use PyTorch Lightning (if applicable) to reduce boilerplate (M15)  
 
 ---
 
-## Week 3 — Monitoring & Optimization
+## Week 2
 
-| Task | Module | Owner | Status | Priority | Notes |
-|------|--------|-------|--------|----------|-------|
-| Data drift evaluation | M27 |  | Todo | High |  |
-| Collect inference data | M27 |  | Todo | High |  |
-| Deploy drift detection API | M27 |  | Todo | Medium |  |
-| Add system metrics | M28 |  | Todo | Medium |  |
-| Cloud monitoring | M28 |  | Todo | Medium |  |
-| Alerts in GCP | M28 |  | Todo | Medium |  |
-| Distributed data loading | M29 |  | Todo | Low |  |
-| Distributed training | M30 |  | Todo | Low |  |
-| Model optimization (quantization, pruning, etc.) | M31 |  | Todo | Low |  |
+### Testing & CI
+- [ ] Write unit tests for the data pipeline (M16)  
+- [ ] Write unit tests for model construction and/or training (M16)  
+- [ ] Calculate code coverage (M16)  
+- [ ] Set up Continuous Integration (CI) on GitHub (M17)  
+- [ ] Add caching and multi-OS / Python / PyTorch testing to CI (M17)  
+- [ ] Add linting to CI (M17)  
+- [ ] Add pre-commit hooks (M18)  
+
+### Automation & Cloud
+- [ ] Add a workflow that triggers when data changes (M19)  
+- [ ] Add a workflow that triggers when the model registry changes (M19)  
+- [ ] Create a GCP Bucket for data and connect it to data version control (M21)  
+- [ ] Create a workflow that automatically builds Docker images (M21)  
+- [ ] Run model training in GCP (Engine or Vertex AI) (M21)  
+
+### Deployment
+- [ ] Create a FastAPI inference API (M22)  
+- [ ] Deploy the model using GCP Functions or Cloud Run (M23)  
+- [ ] Write API tests and integrate them into CI (M24)  
+- [ ] Load test the application (M24)  
+- [ ] Create a specialized deployment API using ONNX and/or BentoML (M25)  
+- [ ] Create a frontend for your API (M26)  
 
 ---
 
-## Extra / Delivery
+## Week 3
 
-| Task | Module | Owner | Status | Priority | Notes |
-|------|--------|-------|--------|----------|-------|
-| Write documentation | M32 |  | Todo | High |  |
-| Publish to GitHub Pages | M32 |  | Todo | Medium |  |
-| Revisit project goals | — |  | Todo | Medium |  |
-| Create MLOps architecture diagram | — |  | Todo | High |  |
-| Team knowledge sync | — |  | Todo | High |  |
-| Push all code to GitHub | — |  | Todo | High |  |
+### Monitoring & Optimization
+- [ ] Evaluate robustness to data drift (M27)  
+- [ ] Collect input-output data from the deployed application (M27)  
+- [ ] Deploy a drift detection API (M27)  
+- [ ] Instrument the API with system metrics (M28)  
+- [ ] Set up cloud monitoring (M28)  
+- [ ] Create alerting in GCP for system failures or performance drops (M28)  
+- [ ] Optimize data loading using distributed data loading (if applicable) (M29)  
+- [ ] Optimize training using distributed training (if applicable) (M30)  
+- [ ] Apply quantization, compilation, or pruning to improve inference speed (M31)  
 
 ---
+
+## Extra
+
+- [ ] Write documentation for your application (M32)  
+- [ ] Publish documentation on GitHub Pages (M32)  
+- [ ] Revisit the original project description — did it turn out as expected?  
+- [ ] Create an architectural diagram of your MLOps pipeline  
+- [ ] Ensure all group members understand all parts of the project  
+- [ ] Upload all code to GitHub  
+
+---
+
 
 
 
