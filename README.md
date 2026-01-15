@@ -36,8 +36,8 @@ Overall, this project demonstrates how a modern MLOps workflow can be applied to
 - [x] Create the initial file structure using Cookiecutter with an appropriate template (M6)  
 
 ### Data & Modeling
-- [ ] Fill out `data.py` so it downloads and preprocesses the required data (M6)  
-- [ ] Add a model to `model.py` and a training procedure to `train.py` and get it running (M6)  
+- [x] Fill out `data.py` so it downloads and preprocesses the required data (M6)  
+- [x] Add a model to `model.py` and a training procedure to `train.py` and get it running (M6)  
 
 ### Dependency & Code Quality
 - [ ] Keep `requirements.txt` / `requirements_dev.txt` or `pyproject.toml` / `uv.lock` up to date (M2, M6)  
