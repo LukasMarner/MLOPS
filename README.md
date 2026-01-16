@@ -36,25 +36,25 @@ Overall, this project demonstrates how a modern MLOps workflow can be applied to
 - [x] Create the initial file structure using Cookiecutter with an appropriate template (M6)  
 
 ### Data & Modeling
-- [ ] Fill out `data.py` so it downloads and preprocesses the required data (M6)  
-- [ ] Add a model to `model.py` and a training procedure to `train.py` and get it running (M6)  
+- [x] Fill out `data.py` so it downloads and preprocesses the required data (M6)  
+- [x] Add a model to `model.py` and a training procedure to `train.py` and get it running (M6)  
 
 ### Dependency & Code Quality
-- [ ] Keep `requirements.txt` / `requirements_dev.txt` or `pyproject.toml` / `uv.lock` up to date (M2, M6)  
-- [ ] Follow good coding practices (PEP8) (M7)  
-- [ ] Document essential parts of the code (M7)  
+- [x] Keep `requirements.txt` / `requirements_dev.txt` or `pyproject.toml` / `uv.lock` up to date (M2, M6)  
+- [x] Follow good coding practices (PEP8) (M7)  
+- [x] Document essential parts of the code (M7)  
 
 ### MLOps Foundations
 - [ ] Set up version control for your data or parts of your data (M8)  
-- [ ] Add command-line interfaces and project commands where appropriate (M9)  
-- [ ] Create one or more Dockerfiles (M10)  
-- [ ] Build the Docker images locally and verify they work (M10)  
-- [ ] Write one or more configuration files for experiments (M11)  
-- [ ] Use Hydra to load configurations and manage hyperparameters (M11)  
-- [ ] Use profiling to optimize your code (M12)  
-- [ ] Use logging to log important events (M14)  
-- [ ] Use Weights & Biases to log training progress and artifacts (M14)  
-- [ ] Consider running a hyperparameter sweep (M14)  
+- [x] Add command-line interfaces and project commands where appropriate (M9)  
+- [x] Create one or more Dockerfiles (M10)  
+- [x] Build the Docker images locally and verify they work (M10)  
+- [x] Write one or more configuration files for experiments (M11)  
+- [x] Use Hydra to load configurations and manage hyperparameters (M11)  
+- [x] Use profiling to optimize your code (M12)  
+- [x] Use logging to log important events (M14)  
+- [x] Use Weights & Biases to log training progress and artifacts (M14)  
+- [x] Consider running a hyperparameter sweep (M14)  
 - [ ] Use PyTorch Lightning (if applicable) to reduce boilerplate (M15)  
 
 ---
