@@ -1,0 +1,33 @@
+# @package training
+
+# Training hyperparameters
+num_epochs: 2  # Small number for pipeline demonstration
+learning_rate: 1e-4
+weight_decay: 0.01
+
+# Optimizer
+optimizer: adam
+momentum: 0.9  # For SGD
+
+# Learning rate scheduler
+use_scheduler: true
+scheduler: cosine
+warmup_epochs: 1
+
+# Training settings
+device: auto  # auto, cpu, or cuda
+mixed_precision: false
+gradient_clip: 1.0
+
+# Validation
+val_freq: 1  # Validate every N epochs
+save_best: true
+metric_to_monitor: val_acc
+
+# Logging
+log_freq: 10  # Log every N batches
+
+# Profiling
+enable_profiling: false  # Set to true to enable performance profiling
+profile_output: outputs/profile_stats.txt
+

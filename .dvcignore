@@ -1,0 +1,23 @@
+# DVC ignore file
+# Ignore files that shouldn't be tracked by DVC
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Model outputs (tracked separately)
+outputs/
+wandb/
+

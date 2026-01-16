@@ -1,0 +1,17 @@
+# @package _global_
+
+defaults:
+  - data: data
+  - model: model
+  - training: training
+  - wandb: wandb
+
+# Project settings
+project_name: mlops_project
+seed: 42
+
+# Paths
+data_dir: data
+models_dir: models
+outputs_dir: outputs
+

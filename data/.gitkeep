@@ -1,0 +1,6 @@
+# Data directory
+# Hugging Face datasets are cached here automatically
+# For data versioning, we use:
+# 1. Hugging Face datasets library (handles versioning via dataset versions)
+# 2. DVC can be used for additional local data versioning if needed
+

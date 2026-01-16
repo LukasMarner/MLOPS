@@ -1,0 +1,20 @@
+# @package data
+
+# Dataset configuration
+dataset_name: ethz/food101
+cache_dir: data
+
+# Data loading
+batch_size: 32
+num_workers: 4
+img_size: 224
+
+# Quick testing mode - use subset of data for fast iteration
+use_subset: false
+subset_ratio: 0.1  # Use 10% of data if use_subset is true
+max_samples_per_class: null  # Limit samples per class (null = no limit)
+
+# Data splits
+train_split: train
+val_split: validation
+

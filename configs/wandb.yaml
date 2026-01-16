@@ -1,0 +1,15 @@
+# @package wandb
+
+# Weights & Biases configuration
+enabled: true
+project: mlops-food101
+entity: null  # Your W&B username/team
+name: null  # Run name (null = auto-generated)
+tags: []
+notes: ""
+
+# Logging options
+log_model: false  # Set to true to log model artifacts
+log_gradients: false
+log_parameters: true
+

@@ -1,0 +1,33 @@
+# @package _global_
+# W&B Hyperparameter Sweep Configuration
+# Use this with: wandb sweep configs/sweep.yaml
+
+program: src/mlops_project/train.py
+method: bayes  # bayes, grid, or random
+metric:
+  name: val/acc
+  goal: maximize
+
+parameters:
+  training.learning_rate:
+    distribution: log_uniform
+    min: 1e-5
+    max: 1e-3
+    
+  training.batch_size:
+    values: [16, 32, 64]
+    
+  training.weight_decay:
+    distribution: uniform
+    min: 0.0
+    max: 0.1
+    
+  training.optimizer:
+    values: ["adam", "sgd"]
+    
+  data.use_subset:
+    value: true  # Use subset for faster sweeps
+    
+  data.subset_ratio:
+    value: 0.1  # 10% of data for quick sweeps
+

@@ -1,0 +1,11 @@
+# @package model
+
+# Model architecture
+pretrained_model: google/vit-base-patch16-224-in21k
+num_classes: 101
+
+# Checkpoint settings
+checkpoint_path: null  # Path to load checkpoint from (null = train from scratch)
+save_checkpoint: true
+checkpoint_dir: models
+
